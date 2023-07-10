@@ -7,20 +7,6 @@ const ingredients = [
   'Condiments',
 ];
 
-const newArr =[];
-const listElem = document.createElement("li");
-ingredients.map(element => {  
-  console.log(element);
-   listElem.textContent = "element";
-   listElem.classList.add("item");
-   newArr.push(listElem);
-})
-console.log(newArr);
-
-const ingredientsToAdd2 = document.querySelector('#ingredients2')
-ingredientsToAdd.append()
-
-
  const listElem1 = document.createElement("li");
  listElem1.textContent = 'Potatoes';
  listElem1.classList.add("item");
@@ -49,4 +35,19 @@ listElem6.classList.add("item");
 const ingredientsToAdd = document.querySelector('#ingredients')
 ingredientsToAdd.append(listElem1, listElem2, listElem3, listElem4, listElem5, listElem6)
 
-// console.log(ingredientsToAdd);
+console.log(ingredientsToAdd);
+//?==========================================================
+// const newArr =[];
+
+// ingredients.forEach(({element}) => {  
+//   const listElem = document.createElement("li");
+//   listElem.textContent = element;
+//   listElem.classList.add("item");
+//   newArr.push(listElem);
+// })
+// console.log(newArr);
+// const newArrToStr = newArr.join(",")
+// console.log(newArrToStr);
+
+// const ingredientsToAdd2 = document.querySelector('#ingredients2')
+// ingredientsToAdd2.append(newArrToStr)
