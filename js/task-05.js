@@ -1,10 +1,12 @@
-const nameOutputSpan = document.querySelector("#name-output")
+const refs = {
+nameOutputSpan :document.querySelector("#name-output"),
+textInput : document.querySelector("#name-input")
+}
 
-const textInput = document.querySelector("#name-input");
-
-textInput.addEventListener( "input", onInput);
+refs.textInput.addEventListener( "input", onInput);
 
 function onInput (event){
-    nameOutputSpan.textContent = event.currentTarget.value;
+refs.nameOutputSpan.textContent = event.currentTarget.value;
+    
 }
 
