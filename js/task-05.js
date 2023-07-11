@@ -2,7 +2,9 @@ const nameOutputSpan = document.querySelector("#name-output")
 
 const textInput = document.querySelector("#name-input");
 
-textInput.addEventListener( "input", (event) => {
-nameOutputSpan.textContent = event.currentTarget.value;
-});
+textInput.addEventListener( "input", onInput);
+
+function onInput (event){
+    nameOutputSpan.textContent = event.currentTarget.value;
+}
 
