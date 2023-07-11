@@ -14,10 +14,13 @@ const images = [
 ];
 // ? ====================================================
 
-const elemToAdd = images
+const addImage = elements =>{
+return elements
 .map(({url, alt})  => `<li class="list-items">  <img src=${url} alt=${alt}  height=200 width=350 ></img>    </li>` )
 .join("");
+}
 
+const elemToAdd = addImage(images);
 
 const ulForInsert = document.querySelector(".gallery");
 ulForInsert.insertAdjacentHTML("afterbegin", elemToAdd);
@@ -26,5 +29,4 @@ ulForInsert.style.display = "flex";
 ulForInsert.style.gap = "10px";
 
 const classForLi = document.querySelectorAll(".list-items");
-
 classForLi.forEach(elem => elem.style.display = "block");
