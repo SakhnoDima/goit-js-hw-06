@@ -21,6 +21,17 @@ password : password.value
 
 console.log(dataToShow);
 
+
+// ?=========================
+// const formData = new FormData(event.currentTarget);
+
+// console.log(formData);
+
+// formData.forEach((value, name) => {
+//     console.log(`Name -`, name);
+//     console.log(`Value - `, value );    
+// });
+
 event.currentTarget.reset();
 }
 
