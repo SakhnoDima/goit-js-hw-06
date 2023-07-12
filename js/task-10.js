@@ -31,7 +31,7 @@ refs.btnCreate.addEventListener( "click", addBoxes)
 
 
 // ?==================================================
-const removeElements = event => refs.boxForAdd.innerHTML = "";
+const destroyBoxes = event => refs.boxForAdd.innerHTML = "";
 
-refs.btnDestroy.addEventListener("click", removeElements)
+refs.btnDestroy.addEventListener("click", destroyBoxes)
 
