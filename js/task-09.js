@@ -12,9 +12,10 @@ const refs = {
 refs.btn.addEventListener("click", toChangColor)
 
 function toChangColor(event){
-refs.body.style.backgroundColor = `${getRandomHexColor()}`;
 
-refs.span.textContent = `${getRandomHexColor()}`
+  refs.body.style.backgroundColor = `${getRandomHexColor()}`;
+
+  refs.span.textContent = `${getRandomHexColor()}`
 
 }
 
