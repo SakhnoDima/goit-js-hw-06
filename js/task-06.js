@@ -6,10 +6,11 @@ input : document.querySelector("#validation-input")
 refs.input.addEventListener("blur", inputOnBlur )
 
 function inputOnBlur (event) {
-    const dataLength = event.currentTarget.dataset.length;
+    const dataLength = parseInt(event.currentTarget.dataset.length);
     const lengthToCheck = event.currentTarget.value.length;
 
-if (dataLength <= lengthToCheck) {
+
+if (dataLength === lengthToCheck) {
     event.currentTarget.classList.add("valid")
     event.currentTarget.classList.remove("invalid")
    
